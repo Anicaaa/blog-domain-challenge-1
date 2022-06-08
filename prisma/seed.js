@@ -22,6 +22,15 @@ async function seed() {
     },
   });
 
+  const createdPost = await prisma.post.create({
+    data: {
+      userId: 2,
+      title: "How to make Tiramisù",
+      published: true,
+      url: "https://profilePictureURL",
+    },
+  });
+
   // Don't edit any of the code below this line
   process.exit(0);
 }
