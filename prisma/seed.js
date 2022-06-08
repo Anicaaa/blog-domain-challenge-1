@@ -31,6 +31,13 @@ async function seed() {
     },
   });
 
+  const createdComment = await prisma.comment.create({
+    data: {
+      postId: createdPost.id,
+      content: "Ahsdbucyebchj",
+    },
+  });
+
   // Don't edit any of the code below this line
   process.exit(0);
 }
