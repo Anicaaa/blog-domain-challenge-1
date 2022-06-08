@@ -13,12 +13,14 @@ async function seed() {
 
   // Add your code here
 
-  /*const createdUser = await prisma.user.create({
+  const createdProfile = await prisma.profile.create({
     data: {
-      username: "Bob",
-      email: "bob@mail.com",
+      userId: 1,
+      picture: "https://profilePictureURL",
+      biography:
+        "Hi everyone, I'm Bob and, in this blog, I'll share my cooking tips",
     },
-  });*/
+  });
 
   // Don't edit any of the code below this line
   process.exit(0);
